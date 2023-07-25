@@ -3,6 +3,7 @@
 import Image from 'next/image'
 import Link from 'next/link'
 import useScroll from '@/lib/hooks/use-scroll'
+import bison from '@/public/assets/logo-stacked2.png'
 
 import { Session } from 'next-auth'
 
@@ -24,13 +25,13 @@ export default function NavBar() {
 						className="flex items-center font-display text-2xl"
 					>
 						<Image
-							src="/logo.png"
+							src={bison}
 							alt="Precedent logo"
-							width="30"
-							height="30"
+							width="200"
+							height="100"
 							className="mr-2 rounded-sm"
 						></Image>
-						<p>Big Bison</p>
+						{/* <p>Big Bison</p> */}
 					</Link>
 				</div>
 			</div>

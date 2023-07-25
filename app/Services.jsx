@@ -1,9 +1,8 @@
-'use client'
 import React from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
 
-export default function Services() {
+const services = () => {
 	return (
 		<div
 			id="services"
@@ -49,8 +48,8 @@ export default function Services() {
 				<div className="">
 					<Image
 						src="/../public/assets/services.jpeg"
-						width="500"
-						height="500"
+						width="500vw"
+						height="500vw"
 						alt="About image"
 						quality={100}
 					/>
@@ -59,4 +58,4 @@ export default function Services() {
 		</div>
 	)
 }
-
+export default services
